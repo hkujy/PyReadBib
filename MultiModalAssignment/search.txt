@@ -1,1 +1,0 @@
-("multimodal" OR "multi modal" OR "multi-modal") AND ("assignment") Not ("supply chain" OR "freight")
