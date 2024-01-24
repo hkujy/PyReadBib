@@ -46,11 +46,12 @@ report  = bibfile.eda_bib()
 # Check Report
 report
 
-exit()
 # %%
 # Check Docs IDs
 data_table.DataTable(bibfile.table_id_doc, num_rows_per_page = 15)
 
+
+# exit()
 # %%
 # Check Docs IDs per Type
 data_table.DataTable(bibfile.id_doc_types(), num_rows_per_page = 15)
