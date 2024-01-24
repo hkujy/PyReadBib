@@ -35,7 +35,7 @@ from prettytable import PrettyTable
 # %%
 # Load .bib
 # Arguments: file_bib = 'filename.bib'; db = 'scopus', 'wos', 'pubmed'; del_duplicated = True, False
-file_name = 'wos.bib'
+file_name = 'BusBunching.bib'
 database  = 'wos'
 bibfile   = pbx_probe(file_bib = file_name, db = database, del_duplicated = True)
 
@@ -46,6 +46,7 @@ report  = bibfile.eda_bib()
 # Check Report
 report
 
+exit()
 # %%
 # Check Docs IDs
 data_table.DataTable(bibfile.table_id_doc, num_rows_per_page = 15)
