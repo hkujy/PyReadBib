@@ -31,7 +31,8 @@ with open("abstract.md","w+") as f:
         print("## {0}".format(bib_database.entries[i]['title']))
         print("### {0}".format(bib_database.entries[i]['year']),file=f)
         print("### {0}".format(bib_database.entries[i]['year']))
-        print("> {0}".format(bib_database.entries[i]['abstract']))
-        print("> {0}".format(bib_database.entries[i]['abstract']),file=f)
+        if 'abstract' in bib_database.entries[i]:
+            print("> {0}".format(bib_database.entries[i]['abstract']))
+            print("> {0}".format(bib_database.entries[i]['abstract']),file=f)
 
 
